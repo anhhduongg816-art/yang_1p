@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>履歷 - AU114011127</title>
+  <title>履歷 - AU114011127 (v5)</title>
   <style>
     :root{
       --bg:#0f1724; --card:#0b1220aa; --glass:#ffffff10; --accent:#3b82f6;
@@ -12,10 +12,9 @@
     }
     *{box-sizing:border-box}
     html,body{height:100%;margin:0}
-    body{background:linear-gradient(180deg,#071023 0%, #081225 60%);color:var(--text);}
+    body{background:linear-gradient(180deg,#071023 0%, #081225 60%);color:var(--text);padding-bottom:40px}
     nav{position:fixed;top:18px;left:50%;transform:translateX(-50%);z-index:10;width:min(1100px,94%);
-      display:flex;align-items:center;justify-content:space-between;
-      padding:10px 16px;border-radius:12px;
+      display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-radius:12px;
       background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
       backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.04)}
     .brand{display:flex;gap:10px;align-items:center}
@@ -24,26 +23,38 @@
       display:flex;align-items:center;justify-content:center;font-weight:700;color:#053;}
     .nav-links{display:flex;gap:18px;align-items:center}
     a.btn{padding:8px 14px;border-radius:10px;text-decoration:none;font-weight:600;color:var(--bg);background:var(--accent)}
-    .hero{position:relative;min-height:80vh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+
+    .hero{position:relative;min-height:72vh;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-top:48px}
     .bg-video{position:absolute;inset:0;object-fit:cover;width:100%;height:100%;filter:brightness(.55) saturate(.9);z-index:0}
     .bg-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,6,23,0.35),rgba(2,6,23,0.7));z-index:1}
-    .card{position:relative;z-index:5;max-width:980px;margin:40px;padding:28px;border-radius:18px;
+    .card{position:relative;z-index:5;max-width:980px;margin:24px;padding:24px;border-radius:18px;
       background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
       border:1px solid rgba(255,255,255,0.05);box-shadow:0 10px 40px rgba(2,6,23,0.6);
-      display:grid;grid-template-columns:1fr 360px;gap:22px;align-items:center}
-    .headline{font-size:clamp(22px,4.5vw,36px);line-height:1.02;margin:0 0 8px}
-    .sub{color:rgba(230,238,246,0.78);margin:0 0 18px}
+      display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:center}
+
+    .headline{font-size:clamp(20px,4vw,34px);line-height:1.02;margin:0 0 8px}
+    .sub{color:rgba(230,238,246,0.78);margin:0 0 12px}
     .cta-row{display:flex;gap:12px;flex-wrap:wrap}
-    .profile-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+
+    .profile-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
     .avatar{width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,#fff2,#fff1);overflow:hidden;display:flex;align-items:center;justify-content:center;}
     .avatar img{width:100%;height:100%;object-fit:cover;border-radius:12px}
-    .features{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
-    .feat{flex:1 1 140px;padding:10px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.02);text-align:center}
-    .socials{display:flex;gap:14px;justify-content:center;margin-top:20px;flex-wrap:wrap}
+    .features{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .feat{flex:1 1 140px;padding:8px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.02);text-align:center;font-size:13px}
+
+    .section{max-width:980px;margin:28px auto;padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.008));border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .project{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px}
+
+    .socials{display:flex;gap:14px;justify-content:center;margin-top:10px;flex-wrap:wrap}
     .social-btn{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:var(--text);text-decoration:none;font-weight:500;transition:background .3s;}
     .social-btn:hover{background:rgba(255,255,255,0.12)}
-    footer{padding:28px;text-align:center;color:rgba(226,238,246,0.6)}
-    @media (max-width:900px){.card{grid-template-columns:1fr}.profile-card{order:2}}
+
+    .download{display:flex;justify-content:center;margin-top:14px}
+
+    footer{padding:28px;text-align:center;color:rgba(226,238,246,0.6);margin-top:28px}
+    @media (max-width:900px){.card{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}.hero{min-height:60vh}}
   </style>
 </head>
 <body>
@@ -52,77 +63,112 @@
       <div class="logo">A</div>
       <div>
         <div style="font-weight:700">AU114011127</div>
-        <div style="font-size:12px;color:rgba(230,238,246,0.6)">履歷 </div>
+        <div style="font-size:12px;color:rgba(230,238,246,0.6)">履歷 — 健康產業管理</div>
       </div>
     </div>
     <div class="nav-links">
       <a href="#about">關於</a>
-      <a href="#skills">技能</a>
+      <a href="#projects">專案</a>
       <a class="btn" href="#contact">聯絡</a>
     </div>
   </nav>
 
-  <header class="hero">
+  <header class="hero" role="banner">
     <video class="bg-video" autoplay muted loop playsinline>
       <source src="assets/demo.mp4" type="video/mp4">
-      <img src="image/yardintro0.jpg" alt="fallback background">
+      <img src="image/yardintro0.jpg" alt="fallback">
     </video>
     <div class="bg-overlay"></div>
 
-    <div class="card">
+    <div class="card" role="region" aria-label="Hero content">
       <div>
         <h1 class="headline">春氏映陽</h1>
-        <p class="sub">大一學生｜主修健康產業管理（Healthcare Management）。熱心助人，關心健康與社會福祉。</p>
+        <p class="sub">大一學生｜主修健康產業管理（健康產業與醫療服務經營）。關注高齡照護、健康促進與醫療服務品質。</p>
         <div class="cta-row">
           <a class="btn" href="#contact">聯絡我</a>
-          <a style="padding:8px 14px;border-radius:10px;text-decoration:none;color:var(--text);background:transparent;border:1px solid rgba(255,255,255,0.06)" href="#skills">查看技能</a>
+          <a style="padding:8px 14px;border-radius:10px;text-decoration:none;color:var(--text);background:transparent;border:1px solid rgba(255,255,255,0.06)" href="#projects">查看專案</a>
         </div>
-        <div class="features" style="margin-top:18px">
-          <div class="feat">醫療管理基礎</div>
-          <div class="feat">健康資訊分析</div>
-          <div class="feat">溝通與團隊合作</div>
+
+        <div class="features" style="margin-top:14px">
+          <div class="feat">健康產業基礎</div>
+          <div class="feat">資料與服務流程入門</div>
+          <div class="feat">溝通與團隊協作</div>
         </div>
       </div>
 
-      <aside class="profile-card">
+      <aside class="profile-card" aria-label="Profile card">
         <div style="display:flex;gap:12px;align-items:center">
-          <div class="avatar"><img src="images/download (1).jpeg" alt="Avatar"/></div>
+          <div class="avatar"><img src="images/download (1).jpeg" alt="Avatar"></div>
           <div>
             <div style="font-weight:700">春氏映陽</div>
-            <div style="font-size:13px;color:rgba(230,238,246,0.6)">大一/健康產業管理系學生</div>
+            <div style="font-size:13px;color:rgba(230,238,246,0.6)">健康產業管理系學生</div>
           </div>
         </div>
+
         <hr style="margin:12px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)">
         <div style="font-size:13px;color:rgba(230,238,246,0.6)">學號：AU114011127</div>
         <div style="display:flex;gap:8px;margin-top:8px">
-          <div style="flex:1;background:rgba(255,255,255,0.02);padding:8px;border-radius:8px;text-align:center">熱愛學習</div>
-          <div style="flex:1;background:rgba(255,255,255,0.02);padding:8px;border-radius:8px;text-align:center">關懷社會</div>
+          <div style="flex:1;background:rgba(255,255,255,0.02);padding:8px;border-radius:8px;text-align:center">積極學習</div>
+          <div style="flex:1;background:rgba(255,255,255,0.02);padding:8px;border-radius:8px;text-align:center">關懷社區</div>
         </div>
       </aside>
     </div>
   </header>
 
   <main>
-    <section id="about" style="max-width:900px;margin:40px auto;padding:18px">
-      <h2>個人簡介</h2>
-      <p>我是一名大學一年級學生，就讀於醫療管理系，對於公共衛生與醫療行政有濃厚興趣。
-      我希望未來能結合資訊科技與醫療管理，幫助醫療單位提升服務效率與病患體驗。
-      在學習過程中，我注重團隊合作、溝通表達與問題解決能力，並不斷培養數據分析與資訊應用的基礎。</p>
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <h2 id="about-heading">個人簡介</h2>
+      <p>
+        我是大學一年級的健康產業管理系學生，熱衷於研究如何透過服務設計與資訊應用改善醫療與健康服務的品質。
+        我關注高齡者照護、社區健康促進，並希望未來能結合資料分析與流程優化協助醫療機構提升效率與病患體驗。
+        目前積極學習健康資料的基本處理、Excel 應用、以及基礎前端技能以製作簡易介面與報告視覺化。
+      </p>
     </section>
 
-    <section id="skills" style="max-width:900px;margin:40px auto;padding:18px">
+    
+    <section id="goals" class="section">
+      <h2>職涯目標</h2>
+      <p>
+        短期：在大學期間累積健康產業管理與資料處理的實務經驗，參與志工或實習以了解產業流程。
+        中期：希望能在醫療服務或長照機構擔任管理助理，參與服務流程優化與病患關懷計畫。
+        長期：結合健康資訊與管理專業，投入智慧健康服務或健康科技新創，提升整體照護品質。
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>專案 / 學習成果</h2>
+      <div class="grid-2">
+        <div class="project">
+          <h3 style="margin:0 0 6px">健康推廣活動協助</h3>
+          <p style="margin:0;font-size:14px;color:rgba(230,238,246,0.8)">協助校園健康宣導活動，參與現場流程與問卷蒐集，整理回饋資料。</p>
+        </div>
+        <div class="project">
+          <h3 style="margin:0 0 6px">Excel 資料整理小案</h3>
+          <p style="margin:0;font-size:14px;color:rgba(230,238,246,0.8)">練習將問卷資料清理、作簡易篩選與統計，輸出圖表於報告中。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quote" class="section" style="text-align:center">
+      <h2>一句話</h2>
+      <blockquote style="font-style:italic;color:rgba(230,238,246,0.85)">
+        「以關懷為出發點，以效率為手段，讓健康服務更貼近每個人的需要。」
+      </blockquote>
+    </section>
+
+    <section id="skills" class="section">
       <h2>技能</h2>
       <div style="display:flex;flex-wrap:wrap;gap:10px;">
-        <span class="feat">醫療管理基礎</span>
-        <span class="feat">健康資料分析（入門）</span>
-        <span class="feat">Office / Excel</span>
-        <span class="feat">HTML / CSS（基礎）</span>
+        <span class="feat">健康產業基礎</span>
+        <span class="feat">Excel / 資料整理</span>
+        <span class="feat">服務流程理解</span>
+        <span class="feat">簡易前端 (HTML/CSS)</span>
         <span class="feat">團隊溝通</span>
         <span class="feat">時間管理</span>
       </div>
     </section>
 
-    <section id="languages" style="max-width:900px;margin:40px auto;padding:18px">
+    <section id="languages" class="section">
       <h2>語言能力</h2>
       <ul style="line-height:1.8">
         <li>越南語（母語）</li>
@@ -131,19 +177,27 @@
       </ul>
     </section>
 
-    <section id="contact" style="max-width:900px;margin:40px auto;padding:18px">
-      <h2>聯絡</h2>
-      <p>歡迎透過以下方式與我聯絡：</p>
+    <section id="download" class="section">
+      <h2>下載履歷</h2>
+      <p>下載檔案以便寄送或列印（請將實際 PDF 放入 <code>assets/</code> 資料夾並改名為 AU114011127_resume.pdf）。</p>
+      <div class="download">
+        <a class="btn" href="assets/AU114011127_resume.pdf" download>📄 下載履歷 PDF</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">聯絡與社群</h2>
+      <p>歡迎透過以下方式聯絡我：</p>
       <div class="socials">
-        <a class="social-btn" href="https://facebook.com" target="_blank">📘 Facebook</a>
-        <a class="social-btn" href="https://instagram.com" target="_blank">📸 Instagram</a>
-        <a class="social-btn" href="https://line.me" target="_blank">💬 Line</a>
+        <a class="social-btn" href="https://facebook.com" target="_blank" rel="noopener">📘 Facebook</a>
+        <a class="social-btn" href="https://instagram.com" target="_blank" rel="noopener">📸 Instagram</a>
+        <a class="social-btn" href="https://line.me" target="_blank" rel="noopener">💬 Line</a>
         <a class="social-btn" href="mailto:example@mail.com">📧 Email</a>
       </div>
     </section>
   </main>
 
-  <footer>© 2025 — AU114011127 履歷展示頁</footer>
+  <footer>© 2025 — AU114011127 • 健康產業管理系學生</footer>
 
   <script>
     const vid = document.querySelector('.bg-video');
