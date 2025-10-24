@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>履歷 - AU114011127</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220aa; --glass:#ffffff10; --accent:#3b82f6;
+      --text:#e6eef6;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{background:linear-gradient(180deg,#071023 0%, #081225 60%);color:var(--text);}
+    nav{position:fixed;top:18px;left:50%;transform:translateX(-50%);z-index:10;width:min(1100px,94%);
+      display:flex;align-items:center;justify-content:space-between;
+      padding:10px 16px;border-radius:12px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.04)}
+    .brand{display:flex;gap:10px;align-items:center}
+    .brand .logo{width:36px;height:36px;border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#60a5fa);
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#053;}
+    .nav-links{display:flex;gap:18px;align-items:center}
+    a.btn{padding:8px 14px;border-radius:10px;text-decoration:none;font-weight:600;color:var(--bg);background:var(--accent)}
+    .hero{position:relative;min-height:80vh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .bg-video{position:absolute;inset:0;object-fit:cover;width:100%;height:100%;filter:brightness(.55) saturate(.9);z-index:0}
+    .bg-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,6,23,0.35),rgba(2,6,23,0.7));z-index:1}
+    .card{position:relative;z-index:5;max-width:980px;margin:40px;padding:28px;border-radius:18px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      border:1px solid rgba(255,255,255,0.05);box-shadow:0 10px 40px rgba(2,6,23,0.6);
+      display:grid;grid-template-columns:1fr 360px;gap:22px;align-items:center}
+    .headline{font-size:clamp(22px,4.5vw,36px);line-height:1.02;margin:0 0 8px}
+    .sub{color:rgba(230,238,246,0.78);margin:0 0 18px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .profile-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .avatar{width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,#fff2,#fff1);overflow:hidden;display:flex;align-items:center;justify-content:center;}
+    .avatar img{width:100%;height:100%;object-fit:cover;border-radius:12px}
+    .features{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .feat{flex:1 1 140px;padding:10px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.02);text-align:center}
+    .socials{display:flex;gap:14px;justify-content:center;margin-top:20px;flex-wrap:wrap}
+    .social-btn{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:var(--text);text-decoration:none;font-weight:500;transition:background .3s;}
+    .social-btn:hover{background:rgba(255,255,255,0.12)}
+    footer{padding:28px;text-align:center;color:rgba(226,238,246,0.6)}
+    @media (max-width:900px){.card{grid-template-columns:1fr}.profile-card{order:2}}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">
+      <div class="logo">A</div>
+      <div>
+        <div style="font-weight:700">AU114011127</div>
+        <div style="font-size:12px;color:rgba(230,238,246,0.6)">履歷 </div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#about">關於</a>
+      <a href="#skills">技能</a>
+      <a class="btn" href="#contact">聯絡</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="assets/demo.mp4" type="video/mp4">
+      <img src="image/yardintro0.jpg" alt="fallback background">
+    </video>
+    <div class="bg-overlay"></div>
+
+    <div class="card">
+      <div>
+        <h1 class="headline">春氏映陽 — 履歷展示</h1>
+        <p class="sub">大一學生｜主修健康產業管理（Healthcare Management）。熱心助人，關心健康與社會福祉。</p>
+        <div class="cta-row">
+          <a class="btn" href="#contact">聯絡我</a>
+          <a style="padding:8px 14px;border-radius:10px;text-decoration:none;color:var(--text);background:transparent;border:1px solid rgba(255,255,255,0.06)" href="#skills">查看技能</a>
+        </div>
+        <div class="features" style="margin-top:18px">
+          <div class="feat">醫療管理基礎</div>
+          <div class="feat">健康資訊分析</div>
+          <div class="feat">溝通與團隊合作</div>
+        </div>
+      </div>
+
+      <aside class="profile-card">
+        <div style="display:flex;gap:12px;align-items:center">
+          <div class="avatar"><img src="images/download (1).jpeg" alt="Avatar"/></div>
+          <div>
+            <div style="font-weight:700">春氏映陽</div>
+            <div style="font-size:13px;color:rgba(230,238,246,0.6)">大一/健康產業管理系學生</div>
+          </div>
+        </div>
+        <hr style="margin:12px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)">
+        <div style="font-size:13px;color:rgba(230,238,246,0.6)">學號：AU114011127</div>
+        <div style="display:flex;gap:8px;margin-top:8px">
+          <div style="flex:1;background:rgba(255,255,255,0.02);padding:8px;border-radius:8px;text-align:center">熱愛學習</div>
+          <div style="flex:1;background:rgba(255,255,255,0.02);padding:8px;border-radius:8px;text-align:center">關懷社會</div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" style="max-width:900px;margin:40px auto;padding:18px">
+      <h2>個人簡介</h2>
+      <p>我是一名大學一年級學生，就讀於醫療管理系，對於公共衛生與醫療行政有濃厚興趣。
+      我希望未來能結合資訊科技與醫療管理，幫助醫療單位提升服務效率與病患體驗。
+      在學習過程中，我注重團隊合作、溝通表達與問題解決能力，並不斷培養數據分析與資訊應用的基礎。</p>
+    </section>
+
+    <section id="skills" style="max-width:900px;margin:40px auto;padding:18px">
+      <h2>技能</h2>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;">
+        <span class="feat">醫療管理基礎</span>
+        <span class="feat">健康資料分析（入門）</span>
+        <span class="feat">Office / Excel</span>
+        <span class="feat">HTML / CSS（基礎）</span>
+        <span class="feat">團隊溝通</span>
+        <span class="feat">時間管理</span>
+      </div>
+    </section>
+
+    <section id="languages" style="max-width:900px;margin:40px auto;padding:18px">
+      <h2>語言能力</h2>
+      <ul style="line-height:1.8">
+        <li>越南語（母語）</li>
+        <li>中文（中等）</li>
+        <li>英文（基礎）</li>
+      </ul>
+    </section>
+
+    <section id="contact" style="max-width:900px;margin:40px auto;padding:18px">
+      <h2>聯絡</h2>
+      <p>歡迎透過以下方式與我聯絡：</p>
+      <div class="socials">
+        <a class="social-btn" href="https://facebook.com" target="_blank">📘 Facebook</a>
+        <a class="social-btn" href="https://instagram.com" target="_blank">📸 Instagram</a>
+        <a class="social-btn" href="https://line.me" target="_blank">💬 Line</a>
+        <a class="social-btn" href="mailto:example@mail.com">📧 Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 — AU114011127 履歷展示頁</footer>
+
+  <script>
+    const vid = document.querySelector('.bg-video');
+    function maybePause(){
+      if(!vid) return;
+      if(window.matchMedia('(pointer:coarse)').matches || window.innerWidth < 700){vid.pause();}
+      else{vid.play().catch(()=>{});}
+    }
+    maybePause();window.addEventListener('resize', maybePause);
+  </script>
+</body>
+</html>
