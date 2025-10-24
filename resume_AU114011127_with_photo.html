@@ -1,198 +1,185 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>履歷 - AU114011127 | 健康產業管理系學生</title>
-  <style>
-    :root{
-      --bg:#0f1724; --card:#0b1220aa; --glass:#ffffff10; --accent:#3b82f6;
-      --text:#e6eef6;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0}
-    body{background:linear-gradient(180deg,#071023 0%, #081225 60%);color:var(--text);padding-bottom:40px}
-    nav{position:fixed;top:18px;left:50%;transform:translateX(-50%);z-index:10;width:min(1100px,94%);
-      display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-radius:12px;
-      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
-      backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.04)}
-    .brand{display:flex;gap:10px;align-items:center}
-    .brand .logo{width:36px;height:36px;border-radius:10px;
-      background:linear-gradient(135deg,var(--accent),#60a5fa);
-      display:flex;align-items:center;justify-content:center;font-weight:700;color:#053;}
-    .nav-links{display:flex;gap:18px;align-items:center}
-    a.btn{padding:8px 14px;border-radius:10px;text-decoration:none;font-weight:600;color:var(--bg);background:var(--accent)}
-
-    .hero{position:relative;min-height:72vh;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-top:48px}
-    .bg-video{position:absolute;inset:0;object-fit:cover;width:100%;height:100%;filter:brightness(.55) saturate(.9);z-index:0}
-    .bg-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,6,23,0.35),rgba(2,6,23,0.7));z-index:1}
-    .card{position:relative;z-index:5;max-width:980px;margin:24px;padding:24px;border-radius:18px;
-      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
-      border:1px solid rgba(255,255,255,0.05);box-shadow:0 10px 40px rgba(2,6,23,0.6);
-      display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:center}
-
-    .headline{font-size:clamp(20px,4vw,34px);line-height:1.02;margin:0 0 8px}
-    .sub{color:rgba(230,238,246,0.78);margin:0 0 12px}
-    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
-
-    .profile-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
-    .avatar{width:72px;height:72px;border-radius:12px;background:linear-gradient(135deg,#fff2,#fff1);overflow:hidden;display:flex;align-items:center;justify-content:center;}
-    .avatar img{width:100%;height:100%;object-fit:cover;border-radius:12px}
-    .features{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-    .feat{flex:1 1 140px;padding:8px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.02);text-align:center;font-size:13px}
-
-    .section{max-width:980px;margin:28px auto;padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.008));border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
-
-    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    .project{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px}
-
-    .socials{display:flex;gap:14px;justify-content:center;margin-top:10px;flex-wrap:wrap}
-    .social-btn{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:var(--text);text-decoration:none;font-weight:500;transition:background .3s;}
-    .social-btn:hover{background:rgba(255,255,255,0.12)}
-
-    .download{display:flex;justify-content:center;margin-top:14px}
-
-    footer{padding:28px;text-align:center;color:rgba(226,238,246,0.6);margin-top:28px}
-    @media (max-width:900px){.card{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}.hero{min-height:60vh}}
-  </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>履歷 - 春氏映陽 | 健康產業管理系學生</title>
+<style>
+:root {
+  --bg:#e7f7ff;
+  --accent:#0ea5e9;
+  --text:#0f172a;
+  --muted:#4b5563;
+  --card:#ffffff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+.resume {
+  width:100%; max-width:950px;
+  animation: fadeIn 1.2s ease-in;
+  border-radius: 16px;
+  box-shadow:0 0 0 2px rgba(255,255,255,0.6),0 10px 25px rgba(15,23,42,0.15);
+  overflow:hidden;
+  background:var(--card);
+}
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(20px)}
+  to {opacity:1; transform:translateY(0)}
+}
+.banner {
+  position: relative;
+  height:260px;
+  overflow: hidden;
+}
+.banner img {
+  width:100%; height:100%; object-fit:cover;
+  filter:brightness(0.8);
+}
+.banner .overlay {
+  position:absolute; inset:0;
+  background:rgba(14,165,233,0.25);
+}
+.banner .info {
+  position:absolute; bottom:40px; left:28px;
+  color:white; text-shadow:0 2px 6px rgba(0,0,0,0.3);
+}
+.banner .info h1 {
+  font-size:26px; font-weight:700; display:flex; align-items:center; gap:8px;
+}
+.banner .info h1 span.icon {
+  background:white; color:var(--accent);
+  border-radius:50%; font-weight:bold; font-size:14px;
+  display:inline-flex; align-items:center; justify-content:center;
+  width:20px; height:20px;
+}
+.banner .info p {font-size:14px; opacity:0.95;}
+.banner .quote {
+  position:absolute; bottom:10px; left:32px;
+  font-size:14px; color:rgba(255,255,255,0.95);
+  font-style:italic; text-shadow:0 1px 3px rgba(0,0,0,0.4);
+}
+.banner .logo-text {
+  position:absolute; right:20px; bottom:20px;
+  font-size:14px; color:rgba(255,255,255,0.9);
+  text-shadow:0 1px 3px rgba(0,0,0,0.3);
+}
+.print-btn {
+  position:absolute; right:28px; top:28px;
+  background:var(--accent); color:white; border:none; padding:8px 12px; border-radius:8px; cursor:pointer;
+  transition: all .3s ease; z-index:10;
+}
+.print-btn:hover {background:#0284c7; transform:scale(1.05);}
+.card {
+  display:grid; grid-template-columns:1fr 2fr; gap:0;
+}
+.left {
+  background:#f9fdff;
+  padding:20px;
+  border-right:1px solid rgba(15,23,42,0.05);
+}
+.right {padding:24px;}
+.section {margin-bottom:20px;}
+.section h3 {font-size:16px; margin-bottom:8px; color:var(--accent);}
+.contact-links {
+  display:flex; flex-wrap:wrap; gap:10px; margin-top:8px;
+}
+.contact-links a {
+  display:inline-flex; align-items:center; gap:6px;
+  background:var(--accent); color:white; text-decoration:none;
+  padding:6px 10px; border-radius:8px; font-size:13px; transition:background .3s;
+}
+.contact-links a:hover {background:#0284c7;}
+footer {
+  padding:18px; text-align:center; font-size:13px; color:var(--muted);
+  background:#f3faff;
+}
+@media (max-width:800px){
+  .card{grid-template-columns:1fr;}
+  .left{border-right:none;border-bottom:1px solid rgba(15,23,42,0.05)}
+}
+</style>
 </head>
 <body>
-  <nav>
-    <div class="brand">
-      <div class="logo">A</div>
-      <div>
-        <div style="font-weight:700">AU114011127</div>
-        <div style="font-size:12px;color:rgba(230,238,246,0.6)">履歷 — 健康產業管理</div>
-      </div>
+<div class="resume">
+  <button class="print-btn" onclick="window.print()">列印 / 儲存 PDF</button>
+  <div class="banner">
+    <img src="images/nen.jpeg" alt="Health Banner"/>
+    <div class="overlay"></div>
+    <div class="info">
+      <h1><span class="icon">＋</span> 春氏映陽 — 健康產業管理系學生</h1>
+      <p>AU114011127</p>
     </div>
-    <div class="nav-links">
-      <a href="#about">關於</a>
-      <a href="#projects">專案</a>
-      <a class="btn" href="#contact">聯絡</a>
-    </div>
-  </nav>
-
-  <header class="hero" role="banner">
-    <video class="bg-video" autoplay muted loop playsinline>
-      <source src="assets/demo.mp4" type="video/mp4">
-      <img src="image/yardintro0.jpg" alt="fallback">
-    </video>
-    <div class="bg-overlay"></div>
-
-    <div class="card" role="region" aria-label="Hero content">
-      <div>
-        <h1 class="headline">春氏映陽</h1>
-        <p class="sub">大一學生｜主修健康產業管理。關注健康促進、長照產業與智慧健康科技。</p>
-        <div class="cta-row">
-          <a class="btn" href="#contact">聯絡我</a>
-          <a style="padding:8px 14px;border-radius:10px;text-decoration:none;color:var(--text);background:transparent;border:1px solid rgba(255,255,255,0.06)" href="#projects">查看專案</a>
+    <div class="quote">「健康不只是沒有疾病，而是身心靈的全面平衡。」</div>
+    <div class="logo-text">健康產業管理系</div>
+  </div>
+  <div class="card">
+    <div class="left">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+        <div style="width:90px;height:90px;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.1)">
+          <img src="images/download (1).jpeg" alt="Avatar" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
         </div>
-        <div class="features" style="margin-top:14px">
-          <div class="feat">健康產業基礎</div>
-          <div class="feat">資料與服務流程入門</div>
-          <div class="feat">團隊協作與溝通</div>
+        <div>
+          <h2 style="margin:0;font-size:18px;">春氏映陽</h2>
+          <p style="margin:2px 0;color:var(--muted)">健康產業管理系學生</p>
         </div>
       </div>
-
-      <aside class="profile-card" aria-label="Profile card">
-        <div style="display:flex;gap:12px;align-items:center">
-          <div class="avatar"><img src="images/download (1).jpeg" alt="Avatar"></div>
-          <div>
-            <div style="font-weight:700">春氏映陽</div>
-            <div style="font-size:13px;color:rgba(230,238,246,0.6)">健康產業管理系學生</div>
-          </div>
+      <div class="section">
+        <h3>聯絡資訊</h3>
+        <p>📞 電話：+886 912-345-678</p>
+        <p>✉️ Email：example@mail.com</p>
+        <p>🏠 住址：台北市，台灣</p>
+      </div>
+      <div class="section">
+        <h3>技能</h3>
+        <ul>
+          <li>健康產業知識</li>
+          <li>資料整理與分析</li>
+          <li>Excel / PowerPoint</li>
+          <li>團隊協作與溝通</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h3>語言</h3>
+        <p>越南語（母語） • 中文（中等） • 英文（基礎）</p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="section">
+        <h3>個人簡介</h3>
+        <p>我是健康產業管理系一年級學生，熱愛探索健康照護與管理的交叉領域。關注高齡社會照護需求、健康促進與智慧健康科技，期望結合健康資料分析與人文關懷，促進社會整體健康福祉。</p>
+        <p style="margin-top:8px;">我喜歡閱讀、旅行和攝影，重視身心平衡和終身學習。</p>
+      </div>
+      <div class="section">
+        <h3>職涯目標</h3>
+        <p>短期：了解健康產業各面向，建立服務管理與數據分析基礎。<br>中期：參與醫療或健康企業實習，培養產業經驗與專案協作能力。<br>長期：投入健康科技、智慧醫療或長照產業管理，推動永續健康發展。</p>
+      </div>
+      <div class="section">
+        <h3>學習資源推薦</h3>
+        <ul>
+          <li><a href="https://www.coursera.org" target="_blank">Coursera 健康管理課程</a></li>
+          <li><a href="https://www.who.int" target="_blank">WHO 健康促進資料庫</a></li>
+          <li><a href="https://www.khanacademy.org" target="_blank">Khan Academy — 公共衛生入門</a></li>
+        </ul>
+      </div>
+      <div class="section">
+        <h3>聯絡與社群</h3>
+        <div class="contact-links">
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+          <a href="https://line.me" target="_blank">Line</a>
+          <a href="mailto:example@mail.com">Email</a>
         </div>
-      </aside>
-    </div>
-  </header>
-
-  <main>
-    <section id="intro" class="section" style="text-align:center">
-      <h2>關於這份履歷 / Về hồ sơ này</h2>
-      <p style="max-width:720px;margin:auto">
-        這是一份由春氏映陽同學製作的健康產業管理系學生履歷範例，旨在幫助其他同學了解如何整理個人學習歷程、技能與職涯目標。<br>
-        Đây là một mẫu sơ yếu lý lịch do sinh viên <b>春氏映陽</b> thực hiện, thuộc ngành <b>Quản lý ngành công nghiệp sức khỏe</b>.  
-        Mục đích là giúp các sinh viên khác tham khảo cách trình bày thông tin học tập, kỹ năng và định hướng nghề nghiệp.
-      </p>
-    </section>
-
-    <section id="about" class="section">
-      <h2>個人簡介</h2>
-      <p>
-        我是健康產業管理系一年級學生，熱愛探索健康照護與管理的交叉領域。
-        我關注高齡社會的照護需求、健康促進活動以及如何透過創新科技改善健康產業的服務品質。
-        希望未來能結合健康資料分析、管理知識與人文關懷，促進社會整體健康福祉。
-      </p>
-    </section>
-
-    <section id="goals" class="section">
-      <h2>職涯目標</h2>
-      <p>
-        短期：了解健康產業各面向，建立服務管理與數據分析基礎。<br>
-        中期：參與醫療或健康企業實習，培養產業經驗與專案協作能力。<br>
-        長期：投入健康科技、智慧醫療或長照產業管理，推動永續健康發展。
-      </p>
-    </section>
-
-    <section id="advice" class="section">
-      <h2>給其他學生的建議</h2>
-      <ul style="line-height:1.8">
-        <li>多參與校內與社區健康活動，累積實際經驗。</li>
-        <li>學習資料處理、報告呈現與團隊溝通技巧。</li>
-        <li>保持關心社會與健康議題，讓專業更有溫度。</li>
-      </ul>
-    </section>
-
-    <section id="resources" class="section">
-      <h2>學習資源推薦</h2>
-      <ul style="line-height:1.8">
-        <li><a href="https://www.coursera.org" target="_blank">Coursera 健康管理課程</a></li>
-        <li><a href="https://www.who.int" target="_blank">WHO 健康促進資料庫</a></li>
-        <li><a href="https://www.khanacademy.org" target="_blank">Khan Academy — 公共衛生入門</a></li>
-      </ul>
-    </section>
-
-    <section id="skills" class="section">
-      <h2>技能</h2>
-      <div style="display:flex;flex-wrap:wrap;gap:10px;">
-        <span class="feat">健康產業知識</span>
-        <span class="feat">資料整理與分析</span>
-        <span class="feat">Excel / PowerPoint</span>
-        <span class="feat">簡易前端製作</span>
-        <span class="feat">團隊協作</span>
-        <span class="feat">時間管理</span>
       </div>
-    </section>
-
-    <section id="languages" class="section">
-      <h2>語言能力</h2>
-      <ul style="line-height:1.8">
-        <li>越南語（母語）</li>
-        <li>中文（中等）</li>
-        <li>英文（基礎）</li>
-      </ul>
-    </section>
-
-    <section id="download" class="section">
-      <h2>下載履歷</h2>
-      <div class="download">
-        <a class="btn" href="assets/AU114011127_resume.pdf" download>📄 下載履歷 PDF</a>
-      </div>
-    </section>
-
-    <section id="contact" class="section fade" style="text-align:center">
-    <h2>聯絡與社群</h2>
-    <div class="socials">
-      <a class="social-icon fb" href="https://facebook.com" target="_blank">f</a>
-      <a class="social-icon ig" href="https://instagram.com" target="_blank">☆</a>
-      <a class="social-icon line" href="https://line.me" target="_blank">L</a>
-      <a class="social-icon mail" href="mailto:example@mail.com">@</a>
     </div>
-  </section>
-  </main>
-
-  <footer>© 2025 — AU114011127 • 健康產業管理系學生</footer>
-          <small>Designed by 春氏映陽 · 2025</small>
+  </div>
+  <footer>© 2025 AU114011127 — 健康產業管理系學生</footer>
+</div>
 </body>
 </html>
